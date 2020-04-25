@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>CALCULADORA DE OPERACIONES BÁSCAS</h1>
+    <!-- Se realizó la descripción del problema a solucionar-->
     <h2>Caputure 2 variables (en 2 inputs tipo number) </h2>
     <p>Que tenga 4 botones: uno para sumar, uno para restar, uno para multiplicar y otro para dividir</p>
     <p>Que devuelva el resultado de la operación de los 2 numeros, según el boton que presione, 
@@ -14,6 +15,7 @@
     <p>Aplique lo visto en el tema de Resolución de problemas.</p>
     <p>Preferiblemente que cada fase de la resolución de problemas tenga un commit de git</p>
     <br><br>
+    <!-- Se realizó una breve explicación del funcionamiento del software-->
     <p>A continuación se le presentan 2 cuadros en los cuales debe ingresar los datos de su operación</p>
         <label for="">Ingrese el primer dato</label>
         <input type="number" id="v1">
@@ -21,6 +23,7 @@
         <label for="">Ingrese el segudo dato</label>
         <input type="number" id="v2">
         <br><br>
+        <!-- Se crearon los input button para la selección de operación-->
         <p>Ahora debe seleccionar la operación que necesite realizar</p>
         <input type="button" onclick="sumar()" value="Sumar">
         <input type="button" onclick="restar()" value="Restar">
@@ -29,69 +32,69 @@
         <p>Este es el resulatdo de la operación realizada</p>
         <label for="">Resulatdo</label>
         <input type="number" name="" id="resu">
-
+        <!-- Se está empezando a trabajar con JavaScript para la solución de operaciones-->
         <script>
             var a,b,r;
-            function sumar(){
-                a=document.getElementById("v1").value;
-                b=document.getElementById("v2").value;
-                if(a == ""){
+            function sumar(){//Se Creó la función del boton sumar para hacer la operación
+                a=document.getElementById("v1").value;//Se obtuvieron los valores ingresados de los input
+                b=document.getElementById("v2").value;//Se obtuvieron los valores ingresados de los input
+                if(a == ""){//solucion de error cuando el usurio deja en blanco el input
                     a=0;
                 }else{
-                    a= parseInt(a);
+                    a= parseInt(a);//conversion de texto a entero
                 }
-                if(b == ""){
+                if(b == ""){//solucion de error cuando el usurio deja en blanco el input
                     b=0;
                 }else{
-                    b= parseInt(b);
+                    b= parseInt(b);//conversion de texto a entero
                 }
                 r= a+b;
                 document.getElementById("resu").value = r;
             }
-            function restar(){
-                a=document.getElementById("v1").value;
-                b=document.getElementById("v2").value;
-                if(a == ""){
+            function restar(){//Se Creó la función del boton restar para hacer la operación
+                a=document.getElementById("v1").value;//Se obtuvieron los valores ingresados de los input
+                b=document.getElementById("v2").value;//Se obtuvieron los valores ingresados de los input
+                if(a == ""){//solucion de error cuando el usurio deja en blanco el input
                     a=0;
                 }else{
-                    a= parseInt(a);
+                    a= parseInt(a);//conversion de texto a entero
                 }
-                if(b == ""){
+                if(b == ""){//solucion de error cuando el usurio deja en blanco el input
                     b=0;
                 }else{
-                    b= parseInt(b);
+                    b= parseInt(b);//conversion de texto a entero
                 }
                 r= a-b;
                 document.getElementById("resu").value = r;
             }
-            function multi(){
-                a=document.getElementById("v1").value;
-                b=document.getElementById("v2").value;
-                if(a == ""){
+            function multi(){//Se Creó la función del boton multiplicar para hacer la operación
+                a=document.getElementById("v1").value;//Se obtuvieron los valores ingresados de los input
+                b=document.getElementById("v2").value;//Se obtuvieron los valores ingresados de los input
+                if(a == ""){//solucion de error cuando el usurio deja en blanco el input
                     a=0;
                 }else{
-                    a= parseInt(a);
+                    a= parseInt(a);//conversion de texto a entero
                 }
-                if(b == ""){
+                if(b == ""){//solucion de error cuando el usurio deja en blanco el input
                     b=0;
                 }else{
-                    b= parseInt(b);
+                    b= parseInt(b);//conversion de texto a entero
                 }
                 r= a*b;
                 document.getElementById("resu").value = r;
             }
-            function div(){
-                a=document.getElementById("v1").value;
-                b=document.getElementById("v2").value;
-                if(a == ""){
+            function div(){//Se Creó la función del boton dividir para hacer la operación
+                a=document.getElementById("v1").value;//Se obtuvieron los valores ingresados de los input
+                b=document.getElementById("v2").value;//Se obtuvieron los valores ingresados de los input
+                if(a == ""){//solucion de error cuando el usurio deja en blanco el input
                     a=0;
                 }else{
-                    a= parseInt(a);
+                    a= parseInt(a);//conversion de texto a entero
                 }
-                if(b == ""){
+                if(b == ""){//solucion de error cuando el usurio deja en blanco el input
                     b=0;
                 }else{
-                    b= parseInt(b);
+                    b= parseInt(b);//conversion de texto a entero
                 }
                 r= a/b;
                 document.getElementById("resu").value = r;
